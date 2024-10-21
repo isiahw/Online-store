@@ -1,3 +1,9 @@
 .catalog {
     min-height: calc(100vh - 100px);
+    
+}
+
+.catalog h3 {
+    margin-top: 20px;
+    color: white;
 }

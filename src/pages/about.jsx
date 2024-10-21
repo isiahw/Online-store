@@ -13,7 +13,7 @@ function About() {
 
             <div className="box">
                 <h2>Raymond Wiggins</h2>
-                { visibleEmail ? <h5>RayWiggins@gamil.com</h5> : <label>Click the button to see my email</label> }
+                { visibleEmail ? <h5>RayWiggins@gamail.com</h5> : <label>Click the button to see my email</label> }
                 <br />
                 {
                     !visibleEmail
