@@ -5,5 +5,15 @@
 
 .catalog h3 {
     margin-top: 20px;
-    color: white;
+    color: darkcyan;
+}
+
+.catalog-items {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    gap: 5px;
+}
+
+.catalog .filters button {
+    margin-left: 8px;
 }
