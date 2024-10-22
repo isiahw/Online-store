@@ -6,7 +6,8 @@ function Footer() {
             <hr/>
             <footer className="content">
                 <div>
-                    <span>Created By: Raymond wiggins</span>
+                    <h3>Created By: Raymond wiggins</h3>
+                    
                 </div>
             </footer>
         </div>

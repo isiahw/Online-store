@@ -1,5 +1,7 @@
 import './styles/navbar.css';
 
+import { Link } from  'react-router-dom';
+
 function Navbar() {
     return(
         <nav class="navbar bg-dark border-bottom border-body navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
@@ -10,39 +12,34 @@ function Navbar() {
     </button>
     <div class="collapse navbar-collapse" id="navbarNavDropdown">
       <ul class="navbar-nav">
+
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">Home</a>
+          <Link class="nav-link active" aria-current="page" to="/home">Home</Link>
         </li>
+
         <li class="nav-item">
-          <a class="nav-link" href="#">Features</a>
+          <Link class="nav-link active" aria-current="page" to="/catalog">Catalog</Link>
         </li>
+
         <li class="nav-item">
-          <a class="nav-link" href="#">Pricing</a>
+          <Link class="nav-link active" aria-current="page" to="/about">About</Link>
         </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Dropdown link
-          </a>
-          <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="#">Action</a></li>
-            <li><a class="dropdown-item" href="#">Another action</a></li>
-            <li><a class="dropdown-item" href="#">Something else here</a></li>
-          </ul>
+
+        <li class="nav-item">
+          <Link class="nav-link active" aria-current="page" to="/admin">Admin</Link>
         </li>
+
       </ul>
+      <div class="d-flex" role="search">
+        <input class="form-control me-2" type="search" placeholder="search" aria-label="search" />
+        <Link className="btn btn-light" to="/cart"> View Cart</Link>
+        <button>Search</button>
+
+      </div>
     </div>
   </div>
 </nav>
-        // <div>
-        //     <nav>
-        //         <div className="menu">
-        //             <a href=''>Log In</a>
-        //             <a href=''>Search</a>
-        //             <a href=''>Subscribe</a>
-        //             <a href=''>Menu</a>
-        //         </div>
-        //     </nav>
-        // </div>
+
     );
 }
 
